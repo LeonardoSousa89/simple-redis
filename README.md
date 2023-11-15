@@ -40,7 +40,7 @@ throw new TypeError('Invalid argument type')
 ```
 
 ```
-this error is sended when type object sended is incoreectly
+this error is sended when type object is different from type object Cache 
 
 ```
 
