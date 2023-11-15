@@ -9,10 +9,11 @@
   ],
   "author": "Leonardo S. Sousa",
   "license": "MIT",
-  "devDependencies": {
-    "@types/jest": "^29.5.8",
-    "jest": "^29.7.0",
-    "redis": "^4.6.10",
-    "typescript": "^5.2.2"
-  }
+  "contributors": [
+    "LeonardoSousa89"
+  ],
+  "homepage": "https://github.com/LeonardoSousa89/simple-redis/tree/production",
+  "categories": [
+    "Other"
+  ]
 }
