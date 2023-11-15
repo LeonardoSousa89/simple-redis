@@ -1,4 +1,4 @@
-# Simple-Redis
+# Simple-Redis-Operations
 
 ## About project
 
