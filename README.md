@@ -1,4 +1,4 @@
-# Simple_Redis-Cache-Operations
+# Simple-Redis-Cache-Operations
 
 ## About project
 
