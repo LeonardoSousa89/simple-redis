@@ -1,5 +1,5 @@
 {
-  "name": "simple_redis",
+  "name": "simple_redis-operations",
   "version": "1.0.0",
   "description": "application to build easy operations inside cache database redis",
   "main": "index.ts",
