@@ -15,7 +15,7 @@
 ```
 - configuring redis [config.js]
 
-    - commons js
+- commons js
 
 ```
     const Redis = require("redis")
@@ -23,7 +23,7 @@
     module.exports = Redis.createClient({})
 
 ```
-    - es6 module
+-  es6 module
 
 ```
     import { createClient } from "redis"
