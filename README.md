@@ -1,4 +1,4 @@
-# Simple-Redis-Operations
+# Simple_Redis-Operations
 
 ## About project
 
@@ -34,10 +34,10 @@
 
 ```
 
-- install simple-redis-operations
+- install simple_redis-operations
 
 ```
-    npm i simple-redis-operations
+    npm i simple_redis-operations
 
 ```
 
@@ -46,7 +46,7 @@
 - commons js
 
 ```
-    const { set } = require("simple-redis-operations");
+    const { set } = require("simple_redis-operations");
     const client = require("./config.js");
 
 ```
@@ -54,7 +54,7 @@
 - es6 module
 
 ```
-    import { set } from "simple-redis-operations";
+    import { set } from "simple_redis-operations";
     import client from "./config.js";
 
 ```
@@ -62,7 +62,7 @@
 - save method
 
 ```
-  import { set } from "simple-redis-operations";
+  import { set } from "simple_redis-operations";
   import client from "./config.js";
 
     client.connect()
@@ -89,7 +89,7 @@
 - get method
 
 ```
-  import { get } from "simple-redis-operations";
+  import { get } from "simple_redis-operations";
   import client from "./config.js";
 
     client.connect()
@@ -114,7 +114,7 @@
 - delete method
 
 ```
-  import { del } from "simple-redis-operations";
+  import { del } from "simple_redis-operations";
   import client from "./config.js";
 
     client.connect()
