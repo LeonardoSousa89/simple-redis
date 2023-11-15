@@ -7,12 +7,13 @@
 
 ### Usage
 
-- install redis 
+- install redis
 
 ```
     npm i redis
 
 ```
+
 - configuring redis [config.js]
 
 - commons js
@@ -23,12 +24,49 @@
     module.exports = Redis.createClient({})
 
 ```
--  es6 module
+
+- es6 module
 
 ```
     import { createClient } from "redis"
 
     export Redis.createClient({})
+
+```
+
+- install simple-redis
+
+```
+    npm i simple-redis
+
+```
+
+- using library[client.js]
+
+- commons js
+    - save method
+
+```
+    const { set } = require("simple-redis");
+    const client = require("./config.js");
+
+     args = {
+            key: "cache_1",
+            value: "cache 1",
+            expiration: 60,
+        };
+
+    const save = async () => {
+
+          await set(client, args);
+    };
+
+    or
+
+    const save = async () => {
+
+        await set(client, { key: "cache_1", value: "cache 1", expiration: 60, });
+    };
 
 ```
 
@@ -40,7 +78,7 @@ throw new TypeError('Invalid argument type')
 ```
 
 ```
-this error is sended when type object is different from type object Cache 
+this error is sended when type object is different from type object Cache
 
 ```
 

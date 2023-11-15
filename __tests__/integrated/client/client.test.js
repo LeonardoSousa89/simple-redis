@@ -8,7 +8,7 @@ let args = {};
 /**
  * O objeto passado deve ser do tipo
  * cache
- * 
+ *
  * let data = {
  *   key: "key",
  *   value: "value",
@@ -24,7 +24,8 @@ const save = async () => {
     expiration: 120,
   };
 
-  await set(client, data);
+  // await set(client, data);
+  await set(client, { key: "cache_1", value: "cache 1", expiration: 120 });
 };
 
 save();
@@ -32,7 +33,7 @@ save();
 /**
  * O objeto passado deve ser do tipo
  * cache
- * 
+ *
  * let data = { key: "key" }
  */
 
@@ -45,18 +46,18 @@ const getter = async () => {
   // args = { key: "cache_1" };
 
   //   pode ser obtido destas três formas
-    const res = await get(client, args);
+  const res = await get(client, args);
   //   const res = await get(client, { key: "cache_1" });
   // const res = await get(client, (args = { key: "cache_1" }));
   console.log(res);
 };
 
-getter();
+// getter();
 
 /**
  * O objeto passado deve ser do tipo
  * cache
- * 
+ *
  * let data = { key: "key" }
  */
 
