@@ -65,6 +65,8 @@
   import { set } from "simple-redis";
   import client from "./config.js";
 
+    client.connect()
+
     args = {
             key: "cache_1",
             value: "cache 1",
@@ -90,6 +92,8 @@
   import { get } from "simple-redis";
   import client from "./config.js";
 
+    client.connect()
+
     let args = { key: "cache_1" };
 
     const getter = async () => {
@@ -112,6 +116,8 @@
 ```
   import { del } from "simple-redis";
   import client from "./config.js";
+
+    client.connect()
 
     let args = { key: "cache_1" };
 
