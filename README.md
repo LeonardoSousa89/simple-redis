@@ -107,6 +107,39 @@
     };
 ```
 
+- delete method
+
+```
+  import { del } from "simple-redis";
+  import client from "./config.js";
+
+    let args = { key: "cache_1" };
+
+    const remove = async() => {
+
+        await del(client, args);
+    };
+
+    // or
+
+    const remove = async() => {
+
+        await del(client, { key: "cache_1" });
+    };
+```
+
+### Type objects expected
+
+- Cache
+
+```
+type Cache = {
+    key?: any,
+    value?: any,
+    expiration?: any,
+}
+```
+
 ### Error message
 
 ```
@@ -127,6 +160,11 @@ let data = {
     val: "cache 1",
     exp: 0
 }
+
+// or
+
+//using one field from methods get and del
+let data = { data: "cache_1" }
 
 ```
 
