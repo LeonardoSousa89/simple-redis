@@ -44,13 +44,28 @@
 - using library[client.js]
 
 - commons js
-    - save method
 
 ```
     const { set } = require("simple-redis");
     const client = require("./config.js");
 
-     args = {
+```
+
+- es6 module
+
+```
+    import { set } from "simple-redis";
+    import client from "./config.js";
+
+```
+
+- save method
+
+```
+  import { set } from "simple-redis";
+  import client from "./config.js";
+
+    args = {
             key: "cache_1",
             value: "cache 1",
             expiration: 60,
@@ -61,13 +76,35 @@
           await set(client, args);
     };
 
-    or
+    // or
 
     const save = async () => {
 
         await set(client, { key: "cache_1", value: "cache 1", expiration: 60, });
     };
+```
 
+- get method
+
+```
+  import { get } from "simple-redis";
+  import client from "./config.js";
+
+    let args = { key: "cache_1" };
+
+    const getter = async () => {
+
+        const response = await get(client, args);
+        return response;
+    };
+
+    // or
+
+    const getter = async () => {
+
+        const response = await get(client, { key: "cache_1" });
+        return response;
+    };
 ```
 
 ### Error message
