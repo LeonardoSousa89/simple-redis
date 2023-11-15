@@ -1,0 +1,41 @@
+erro de tipo de objeto diferente do
+tipo de objeto esperado (tipo esperado Cache):
+
+- TypeError
+
+excessão lançada quando o tipo difere do tipo Cache*
+
+Ex: 
+
+//tipo errado
+payload = {
+    data: "args",
+    valor: "",
+    expira: ""
+}
+
+//tipo correto
+payload = {
+    key: "cache_1",
+    value: "cache 1",
+    expiration: 60,
+}
+
+metodo set(client, payload)
+
+
+//tipo errado
+payload = { data: "args" }
+
+//tipo correto
+payload = { key: "cache_1",}
+
+metodo get(client, payload)
+
+
+payload = { data: "args" }
+
+//tipo correto
+payload = { key: "cache_1",}
+
+metodo del(client, payload)
