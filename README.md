@@ -23,7 +23,7 @@
     module.exports = Redis.createClient({})
 
 ```
- - es6 module
+    - es6 module
 
 ```
     import { createClient } from "redis"
