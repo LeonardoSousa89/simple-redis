@@ -34,12 +34,20 @@
 
 ### Error message
 
-- throw new TypeError('Invalid argument type')
+```
+throw new TypeError('Invalid argument type')
+
+```
 
 ```
 this error is sended when type object sended is incoreectly
 
-ex: let data = {
+```
+
+- Ex:
+
+```
+let data = {
     data: "cache_1",
     val: "cache 1",
     exp: 0
