@@ -42,12 +42,12 @@ const getter = async () => {
   args = { k: "cache_1" };
 
   //tipo correto
-  args = { key: "cache_1" };
+  // args = { key: "cache_1" };
 
   //   pode ser obtido destas três formas
-  //   const res = await get(client, args);
+    const res = await get(client, args);
   //   const res = await get(client, { key: "cache_1" });
-  const res = await get(client, (args = { key: "cache_1" }));
+  // const res = await get(client, (args = { key: "cache_1" }));
   console.log(res);
 };
 
