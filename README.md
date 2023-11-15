@@ -30,7 +30,7 @@
 ```
     import { createClient } from "redis"
 
-    export Redis.createClient({})
+    export const Redis = createClient({})
 
 ```
 
