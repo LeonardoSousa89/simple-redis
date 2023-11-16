@@ -1,4 +1,4 @@
-# Simple-Redis-Cache-Operations
+# Simple-Redis-Cache
 
 ## About project
 
@@ -34,10 +34,10 @@
 
 ```
 
-- install simple-redis-cache-operations
+- install simple-redis-cache
 
 ```
-    npm i simple-redis-cache-operations
+    npm i simple-redis-cache
 
 ```
 
@@ -46,7 +46,7 @@
 - commons js
 
 ```
-    const { set } = require("simple-redis-cache-operations");
+    const { set } = require("simple-redis-cache");
     const client = require("./config.js");
 
 ```
@@ -54,7 +54,7 @@
 - es6 module
 
 ```
-    import { set } from "simple-redis-cache-operations";
+    import { set } from "simple-redis-cache";
     import client from "./config.js";
 
 ```
@@ -62,7 +62,7 @@
 - save method
 
 ```
-  import { set } from "simple-redis-cache-operations";
+  import { set } from "simple-redis-cache";
   import client from "./config.js";
 
     client.connect()
@@ -89,7 +89,7 @@
 - get method
 
 ```
-  import { get } from "simple-redis-cache-operations";
+  import { get } from "simple-redis-cache";
   import client from "./config.js";
 
     client.connect()
@@ -114,7 +114,7 @@
 - delete method
 
 ```
-  import { del } from "simple-redis-cache-operations";
+  import { del } from "simple-redis-cache";
   import client from "./config.js";
 
     client.connect()

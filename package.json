@@ -1,8 +1,8 @@
 {
-  "name": "simple-redis-cache-operations",
-  "version": "1.0.0",
+  "name": "simple-redis-cache",
+  "version": "1.0.11",
   "description": "application to build easy operations inside cache database redis",
-  "main": "index.ts",
+  "main": "index.js",
   "scripts": {},
   "keywords": [
     "redis"
