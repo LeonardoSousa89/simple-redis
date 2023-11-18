@@ -1,6 +1,6 @@
 {
   "name": "simple-redis-caching",
-  "version": "1.0.12",
+  "version": "1.0.13",
   "description": "application to build easy operations inside cache database redis",
   "main": "index.js",
   "scripts": {},
@@ -12,7 +12,7 @@
   "contributors": [
     "LeonardoSousa89"
   ],
-  "homepage": "https://github.com/LeonardoSousa89/simple-redis/tree/production",
+  "homepage": "https://github.com/LeonardoSousa89/simple-redis-caching/tree/production",
   "categories": [
     "Other"
   ]
