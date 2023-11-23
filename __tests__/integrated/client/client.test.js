@@ -1,3 +1,5 @@
+//https://www.typescriptlang.org/pt/docs/handbook/declaration-files/dts-from-js.html
+
 const { set, get, del } = require("../../../build/dist/index");
 const client = require("./redis.client.conf.test");
 
@@ -25,10 +27,10 @@ const save = async () => {
   };
 
   // await set(client, data);
-  await set(client, { key: "cache_1", value: "cache 1", expiration: 120 });
+  await set(client, { key: "cache_1", value: "cache 1", expiration: 180 });
 };
 
-save();
+// save();
 
 /**
  * O objeto passado deve ser do tipo
@@ -46,8 +48,8 @@ const getter = async () => {
   // args = { key: "cache_1" };
 
   //   pode ser obtido destas três formas
-  const res = await get(client, args);
-  //   const res = await get(client, { key: "cache_1" });
+  // const res = await get(client, args);
+    const res = await get(client, { key: "cache_1" });
   // const res = await get(client, (args = { key: "cache_1" }));
   console.log(res);
 };
@@ -63,11 +65,12 @@ const getter = async () => {
 
 //passed
 const remove = () => {
-  args = { k: "cache_1" };
+  // args = { k: "cache_1" };
+  args = { key: "cache_1" };
 
   setTimeout(async function () {
     del(client, args);
   }, 5000);
 };
 
-// remove();
+remove();

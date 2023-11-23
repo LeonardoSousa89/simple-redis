@@ -1,5 +1,5 @@
 export interface CacheOperations {
-  setCache(): any;
-  getCache(): any;
-  deleteCache(): any;
+  setCache(): Promise<void>;
+  getCache(): Promise<string>;
+  deleteCache(): Promise<void>;
 }
