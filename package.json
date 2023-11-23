@@ -1,11 +1,11 @@
 {
   "name": "simple-redis-caching",
-  "version": "1.0.13",
+  "version": "1.0.14",
   "description": "application to build easy operations inside cache database redis",
   "main": "index.js",
   "scripts": {},
   "keywords": [
-    "redis"
+    "redis", "cache"
   ],
   "author": "Leonardo S. Sousa",
   "license": "MIT",
