@@ -1,6 +1,7 @@
 //https://www.typescriptlang.org/pt/docs/handbook/declaration-files/dts-from-js.html
 
 const { set, get, del } = require("../../../build/dist/index");
+// const { set, get, del } = require("../../../../../prod/simple-redis-caching/index");
 const client = require("./redis.client.conf.test");
 
 client.connect();
@@ -50,7 +51,7 @@ const getter = async () => {
 
   //   pode ser obtido destas três formas
   // const res = await get(client, args);
-    const res = await get(client, { key: "cache_2" });
+    const res = await get(client, { key: "cache_3" });
   // const res = await get(client, (args = { key: "cache_1" }));
   console.log(res);
 };
@@ -67,11 +68,11 @@ const getter = async () => {
 //passed
 const remove = () => {
   // args = { k: "cache_1" };
-  args = { key: "cache_2" };
+  args = { key: "cache_3" };
 
   setTimeout(async function () {
     del(client, args);
   }, 5000);
 };
 
-// remove();
+remove();
