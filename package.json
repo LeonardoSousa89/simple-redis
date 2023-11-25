@@ -1,6 +1,6 @@
 {
   "name": "simple-redis-caching",
-  "version": "1.0.14",
+  "version": "1.0.15",
   "description": "application to build easy operations inside cache database redis",
   "main": "index.js",
   "scripts": {},
