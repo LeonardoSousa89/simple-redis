@@ -27,7 +27,8 @@ const save = async () => {
   };
 
   // await set(client, data);
-  await set(client, { key: "cache_1", value: "cache 1", expiration: 180 });
+  // await set(client, { key: "cache_2", value: "cache 2", expiration: 180 });
+  await set(client, { key: "cache_3", value: 1024, expiration: 180 });
 };
 
 // save();
@@ -49,7 +50,7 @@ const getter = async () => {
 
   //   pode ser obtido destas três formas
   // const res = await get(client, args);
-    const res = await get(client, { key: "cache_1" });
+    const res = await get(client, { key: "cache_2" });
   // const res = await get(client, (args = { key: "cache_1" }));
   console.log(res);
 };
@@ -66,11 +67,11 @@ const getter = async () => {
 //passed
 const remove = () => {
   // args = { k: "cache_1" };
-  args = { key: "cache_1" };
+  args = { key: "cache_2" };
 
   setTimeout(async function () {
     del(client, args);
   }, 5000);
 };
 
-remove();
+// remove();

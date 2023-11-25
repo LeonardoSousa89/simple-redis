@@ -140,8 +140,8 @@
 
 ```
 type Cache = {
-    key?: string,
-    value?: string,
+    key: string,
+    value?: string | number,
     expiration?: number,
 }
 ```
@@ -161,6 +161,7 @@ this error is sended when type object is different from type object Cache
 - Ex:
 
 ```
+//payload incorrect
 let data = {
     data: "cache_1",
     val: "cache 1",
